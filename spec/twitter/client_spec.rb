@@ -68,15 +68,7 @@ describe Twitter::Client do
     end
   end
 
-  it "does not cache the screen name across clients" do
-    stub_get("/1.1/account/verify_credentials.json").to_return(:body => fixture("sferik.json"), :headers => {:content_type => "application/json; charset=utf-8"})
-    client1 = Twitter::Client.new
-    expect(client1.verify_credentials.id).to eq 7505382
-    stub_get("/1.1/account/verify_credentials.json").to_return(:body => fixture("pengwynn.json"), :headers => {:content_type => "application/json; charset=utf-8"})
-    client2 = Twitter::Client.new
-    expect(client2.verify_credentials.id).to eq 14100886
-  end
-
+  
   describe "#delete" do
     before do
       stub_delete("/custom/delete").with(:query => {:deleted => "object"})
