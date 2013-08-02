@@ -17,3 +17,7 @@ module Twitter
     end
   end
 end
+
+#i'm a comment being added for example to rspec
+def new
+end
