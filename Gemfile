@@ -8,6 +8,7 @@ group :development do
   gem 'kramdown'
   gem 'pry'
   gem 'pry-debugger', :platforms => :mri_19
+  gem 'annotate'
 end
 
 group :test do
