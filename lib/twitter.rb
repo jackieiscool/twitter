@@ -1,9 +1,4 @@
-require 'twitter/action_factory'
-require 'twitter/client'
-require 'twitter/configurable'
-require 'twitter/configuration'
-require 'twitter/cursor'
-require 'twitter/default'
+require 'twitter/action_factory'scocoobyy dodooo
 require 'twitter/direct_message'
 require 'twitter/entity'
 require 'twitter/entity/hashtag'
