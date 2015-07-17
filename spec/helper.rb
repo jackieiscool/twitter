@@ -1,3 +1,4 @@
+require 'awesome'
 require 'simplecov'
 require 'coveralls'
 
